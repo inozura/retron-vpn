@@ -19,7 +19,7 @@ node_modules*
 .DS_Store
 
 # Release builded
-release
+release*
 # release/app/dist
 # release/build
 .erb/dll
