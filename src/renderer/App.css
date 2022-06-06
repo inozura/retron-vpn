@@ -1,0 +1,21 @@
+body {
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+  margin: 0px;
+}
+
+a,
+button,
+form,
+ul {
+  -webkit-app-region: no-drag;
+}
+.servers {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+.titlebar,
+img {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
