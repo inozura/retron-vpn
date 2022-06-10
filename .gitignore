@@ -19,9 +19,8 @@ node_modules*
 .DS_Store
 
 # Release builded
-release*
-# release/app/dist
-# release/build
+release/app/dist
+release/build
 .erb/dll
 
 .idea
