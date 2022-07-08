@@ -23,7 +23,7 @@ export default function App() {
   const [protocolId, setProtocolId] = useState(0);
 
   useEffect(() => {
-    const showOption = (arg) => {
+    const showOption = (arg: unknown) => {
       if (arg === 'show') {
         history.push('/option');
       }
@@ -33,6 +33,7 @@ export default function App() {
     return () => {
       window.electron.ipcRenderer.removeListener('option-window', showOption);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
