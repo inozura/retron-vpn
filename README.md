@@ -1,7 +1,8 @@
 # React Electron VPN
 
-<img src=".erb/img/Demo.png" width="100%" />
-
+<p align="center">
+  <img src=".erb/img/Demo.png" width="320" />
+</p>
 <br>
 
 <p>
