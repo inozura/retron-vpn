@@ -10,7 +10,7 @@ const publicIp = require('public-ip');
 const ps = require('ps-node');
 
 const resourcesDir = process.resourcesPath + path.sep; // "." + path.sep + "resources" + path.sep + "app" + path.sep;
-let appDir = os.homedir() + path.sep + 'JailbreakVPN' + path.sep;
+let appDir = os.homedir() + path.sep + 'RetronVPN' + path.sep;
 let ovpnDir = appDir + 'ovpn';
 let ovpnFileName = null;
 let usersDir = appDir + 'users';
@@ -28,7 +28,7 @@ let connectedOnce = false;
 let settings = {
   // killSwitch: false,
 };
-const cfgFilePath = path.normalize(miscDir + path.sep + "JailbreakVPN.cfg");
+const cfgFilePath = path.normalize(miscDir + path.sep + "RetronVPN.cfg");
 
 appDir = path.resolve(appDir) + path.sep;
 ovpnDir = path.resolve(ovpnDir) + path.sep;
@@ -66,7 +66,7 @@ loadCfg();
 
 fs.closeSync(fs.openSync(miscDir + "OpenVPN.log", "w"));
 fs.closeSync(fs.openSync(miscDir + "OpenVPN.status", "w"));
-const logFile = fs.openSync(miscDir + 'JailbreakVPN.log', 'w');
+const logFile = fs.openSync(miscDir + 'RetronVPN.log', 'w');
 
 const log = (message, alsoWiteToConsole = false) => {
   if (alsoWiteToConsole) {
@@ -185,7 +185,7 @@ export const disconnectOpenVPN = (
         fs.unwatchFile(fpOpenVpnLog);
         sudo.exec(
           'pkill -SIGINT openvpn',
-          { name: 'Jailbreak VPN' },
+          { name: 'Retron VPN' },
           (error, stdout, stderr) => {
             if (error) log('err:' + error.toString(), true);
             if (stdout) log('stdout: ' + stdout.toString(), false);
@@ -400,7 +400,7 @@ const connectOpenVPN = (withoutPass) => {
       '"' +
       openVPNExecCmd +
       '" ' +
-      '--daemon jailbreak-vpn ' +
+      '--daemon retron-vpn ' +
       '--log "' +
       fpOpenVpnLog +
       '" ' +
@@ -414,7 +414,7 @@ const connectOpenVPN = (withoutPass) => {
       '" 1 ' +
       '--inactive 3600 --ping 1 --ping-exit 5';
     log('starting ' + cmd, true);
-    sudo.exec(cmd, { name: 'Jailbreak VPN' }, (error, stdout, stderr) => {
+    sudo.exec(cmd, { name: 'Retron VPN' }, (error, stdout, stderr) => {
       if (error) {
         log('err:' + error.toString(), true);
         //console.log("Something went wrong, try again...");
@@ -572,7 +572,7 @@ const installOpenVpn = () => {
         log(aptGetInstallCmd, true);
         sudo.exec(
           aptGetInstallCmd,
-          { name: 'Jailbreak VPN' },
+          { name: 'Retron VPN' },
           (error, stdout, stderr) => {
             if (error) log('err:' + error.toString(), true);
             if (stdout) log('stdout: ' + stdout.toString(), false);
