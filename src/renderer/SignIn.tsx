@@ -89,7 +89,7 @@ export default function SignIn() {
 
   return (
     <>
-      <LogoTopBar title="Jailbreak VPN" bgcolor="#D4EDF6" />
+      <LogoTopBar title="Retron VPN" bgcolor="#D4EDF6" />
       <Container
         sx={{
           minHeight: '100vh',
@@ -160,7 +160,7 @@ export default function SignIn() {
                 Sign In
               </Button>
               <Link
-                href="https://jailbreakvpn.com/forget_password"
+                href="#" // forgot password url
                 target="_blank"
                 rel="noopener"
                 underline="always"
@@ -172,7 +172,7 @@ export default function SignIn() {
             </Stack>
             <Stack alignItems="center" spacing={1}>
               <Link
-                href="https://community.jailbreakvpn.com/"
+                href="#" // help url 
                 target="_blank"
                 rel="noopener"
                 underline="none"
@@ -182,7 +182,7 @@ export default function SignIn() {
                 Need Help?
               </Link>
               <Typography variant="caption">
-                New to Jailbreak VPN?{' '}
+                New to Retron VPN?{' '}
                 <Link component={RouterLink} underline="none" to="/sign-up">
                   Sign Up
                 </Link>
