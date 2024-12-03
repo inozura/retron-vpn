@@ -18,7 +18,7 @@ export default function Connected({ selectedServer, connectedServer, platformId,
   const location = useLocation();
 
   useEffect(() => {
-    window.open('https://jailbreakvpn.com/checkip.php');
+    window.open('#'); // url to checkip
   }, []);
 
   useEffect(() => {
