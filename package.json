@@ -1,5 +1,5 @@
 {
-  "name": "jailbreak",
+  "name": "retron",
   "description": "VPN Application",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
@@ -29,15 +29,15 @@
     ]
   },
   "build": {
-    "productName": "Jailbreak VPN",
-    "appId": "com.jailbreak.jailbreak-vpn",
+    "productName": "Retron VPN",
+    "appId": "com.retron.retron-vpn",
     "win": {
       "target": "nsis",
       "requestedExecutionLevel": "requireAdministrator",
       "publish": [
         {
           "provider": "generic",
-          "url": "http://127.0.0.1/jailbreak"
+          "url": "http://127.0.0.1/retron"
         }
       ]
     },
@@ -61,14 +61,14 @@
       "publish": [
         {
           "provider": "generic",
-          "url": "http://127.0.0.1/update/jailbreakvpn/linux"
+          "url": "http://127.0.0.1/update/retronvpn/linux"
         }
       ]
     },
     "snap": {
       "grade": "devel",
-      "summary": "Official desktop client for Jailbreak VPN.",
-      "title": "jailbreak"
+      "summary": "Official desktop client for Retron VPN.",
+      "title": "retron"
     },
     "files": [
       "dist",
@@ -86,7 +86,7 @@
       "output": "release/build"
     }
   },
-  "homepage": "https://www.jailbreakvpn.com/",
+  "homepage": "https://www.retronvpn.com/",
   "jest": {
     "testURL": "http://localhost/",
     "testEnvironment": "jsdom",

@@ -1,13 +1,8 @@
 {
-  "name": "jailbreak",
+  "name": "retron",
   "version": "1.0.1",
   "description": "VPN Application",
   "main": "./dist/main/main.js",
-  "author": {
-    "name": "Jailbreak VPN",
-    "email": "timtinan@outlook.com",
-    "url": "https://www.jailbreakvpn.com/"
-  },
   "scripts": {
     "electron-rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
     "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts",
