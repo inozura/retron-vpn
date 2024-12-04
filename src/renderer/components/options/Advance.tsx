@@ -72,7 +72,7 @@ export default function Advance() {
               control={<Checkbox defaultChecked />}
               label={
                 <Typography variant="caption">
-                  Only use JailbreakVPN DNS servers while connected.
+                  Only use RetronVPN DNS servers while connected.
                 </Typography>
               }
             />
