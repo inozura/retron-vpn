@@ -7,11 +7,11 @@ export default function Browsers() {
     <>
       <Divider textAlign="left" sx={{ mb: 2 }}>
         <Typography variant="caption" color="#828282">
-          JailbreakVPN Browser Extension
+          RetronVPN Browser Extension
         </Typography>
       </Divider>
       <Typography variant="caption">
-        The JailbreakVPN Browser Extension lets you control you VPN connection
+        The RetronVPN Browser Extension lets you control you VPN connection
         directly from your browser. Learn more
       </Typography>
       <Box display="flex" mt={4}>
