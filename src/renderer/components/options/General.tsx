@@ -24,7 +24,7 @@ export default function General() {
               control={<Checkbox defaultChecked />}
               label={
                 <Typography variant="caption">
-                  Launch Jailbreak VPN on OS startup
+                  Launch Retron VPN on OS startup
                 </Typography>
               }
             />
@@ -34,7 +34,7 @@ export default function General() {
               control={<Checkbox defaultChecked />}
               label={
                 <Typography variant="caption">
-                  Start Jailbreak minimized
+                  Start Retron minimized
                 </Typography>
               }
             />
@@ -44,7 +44,7 @@ export default function General() {
               control={<Checkbox defaultChecked />}
               label={
                 <Typography variant="caption">
-                  Convert to the last used location when Jailbreak VPN is
+                  Convert to the last used location when Retron VPN is
                   launched
                 </Typography>
               }
@@ -102,7 +102,7 @@ export default function General() {
               component="div"
               mb={2}
             >
-              Click Settings to choose which apps use Jailbreak VPN when
+              Click Settings to choose which apps use Retron VPN when
               connected.
             </Typography>
             <Button variant="outlined" size="small">
