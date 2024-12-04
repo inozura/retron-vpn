@@ -31,7 +31,7 @@ export default function Start() {
 
   return (
     <>
-      <LogoTopBar title="Jailbreak VPN" bgcolor="#FFFFFF" />
+      <LogoTopBar title="Retron VPN" bgcolor="#FFFFFF" />
       <Container
         sx={{
           bgcolor: '#D4EDF6',
@@ -67,7 +67,7 @@ export default function Start() {
               size="medium"
             >
               <Link
-                href="https://www.jailbreakvpn.com/pricing"
+                href="#" // subcription url
                 target="_blank"
                 rel="noopener"
                 underline="none"
