@@ -128,7 +128,7 @@ export default function RemainingMb() {
         </Typography>
       </Box>
       <Link
-        href="https://www.jailbreakvpn.com/pricing"
+        href="#" // pricing url
         target="_blank"
         rel="noopener"
         underline="none"
