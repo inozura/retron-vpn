@@ -27,7 +27,7 @@ export default function RadioButtonsGroup() {
                 }
               />
               <Typography variant="caption" component="div" ml={3.5}>
-                Jailbreak VPN will automatically pick the protocol most
+                Retron VPN will automatically pick the protocol most
                 appropriate for your network.
               </Typography>
             </Box>
@@ -42,7 +42,7 @@ export default function RadioButtonsGroup() {
                 }
               />
               <Typography variant="caption" component="div" ml={3.5}>
-                Jailbreak VPN’s next generation protocol optimized for speed,
+                Retron VPN’s next generation protocol optimized for speed,
                 stability. Advanced options
               </Typography>
             </Box>
