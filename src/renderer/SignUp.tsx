@@ -75,7 +75,7 @@ export default function SignUp() {
 
   return (
     <>
-      <LogoTopBar title="Jailbreak VPN" bgcolor="#D4EDF6" />
+      <LogoTopBar title="Retron VPN" bgcolor="#D4EDF6" />
       <Container
         sx={{
           minHeight: '100vh',
@@ -150,7 +150,7 @@ export default function SignUp() {
             </Button>
             <Stack alignItems="center" spacing={1}>
               <Link
-                href="https://community.jailbreakvpn.com/"
+                href="#" // help url
                 target="_blank"
                 rel="noopener"
                 underline="none"
