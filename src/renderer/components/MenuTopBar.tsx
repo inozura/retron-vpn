@@ -133,7 +133,7 @@ export default function MenuTopBar({ connectedServer }) {
           <ListItemText>Quit</ListItemText>
         </MenuItem>
       </Menu>
-      <Typography variant="subtitle2">Jailbreak VPN</Typography>
+      <Typography variant="subtitle2">Retron VPN</Typography>
       <Box display="flex">
         <WindowAction />
       </Box>
