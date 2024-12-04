@@ -47,7 +47,7 @@ export default function Account() {
             Refer friends
           </Typography>
           <Typography variant="caption" component="div" mb={2}>
-            Share Jailbreak VPN and get free service!
+            Share Retron VPN and get free service!
             <br />
             For every friend who signs up we’ll give you both 30 days free.
           </Typography>
